@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mina projekt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+      margin: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      width: 90%;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card a {
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #007acc;
+    }
+    .card p {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <a href="https://github.com/dittnamn/repo1">Repo namn #1</a>
+      <p>Använd dig av branch "main"</p>
+    </div>
+    <div class="card">
+      <a href="https://github.com/dittnamn/repo2">Repo namn #2</a>
+      <p>Se README för instruktioner</p>
+    </div>
+    <div class="card">
+      <a href="https://gitlab.com/dittnamn/repo3">Repo namn #3</a>
+      <p>Kör med Python 3.11</p>
+    </div>
+    <div class="card">
+      <a href="https://gitlab.com/dittnamn/repo4">Repo namn #4</a>
+      <p>Filerna finns i /src</p>
+    </div>
+  </div>
+</body>
+</html>
